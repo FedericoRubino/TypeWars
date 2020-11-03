@@ -1,0 +1,23 @@
+{
+  "name": "typewars",
+  "version": "1.0.0",
+  "description": "Typing game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoRubino/TypeWars.git"
+  },
+  "keywords": [
+    "typing",
+    "webapp"
+  ],
+  "author": "Federico Rubino, Cody Patterson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedericoRubino/TypeWars/issues"
+  },
+  "homepage": "https://github.com/FedericoRubino/TypeWars#readme"
+}
