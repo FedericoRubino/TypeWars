@@ -15,4 +15,4 @@ Technologies
 - Websockets
 
 ## Wireframe
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](https://github.com/FedericoRubino/TypeWars/blob/master/wireframe_mockup.PNG)
