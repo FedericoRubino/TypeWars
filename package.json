@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/FedericoRubino/TypeWars/issues"
   },
-  "homepage": "https://github.com/FedericoRubino/TypeWars#readme"
+  "homepage": "https://github.com/FedericoRubino/TypeWars#readme",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
 }
