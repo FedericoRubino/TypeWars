@@ -1,5 +1,5 @@
 # TypeWars
-### By Federico Rubino and Codey Patterson
+### By Federico Rubino and Cody Patterson
 
 Notes:
 
