@@ -26,7 +26,7 @@
 <script>
 import PostService from '../PostService';
 export default {
-  name: 'PostComponent',
+  name: 'Post',
   data() {
     return {
       posts: [],
