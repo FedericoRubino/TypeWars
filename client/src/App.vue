@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="Vue logo" src="./assets/logo.png" />
     <Post />
   </div>
 </template>
 
 <script>
-import Post from './components/Post.vue'
+import Post from "./components/Post.vue";
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    Post
-  }
-}
+    Post,
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
