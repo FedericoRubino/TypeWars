@@ -1,6 +1,6 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const app = express();
 
@@ -9,19 +9,19 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // APIs
-const api = require('./routes/api/general');
-app.use('api/general', api);
+const api = require("./routes/api/general");
+app.use("api/general", api);
 
-const posts = require('./routes/api/posts');
-app.use('/api/posts', posts);
+const posts = require("./routes/api/posts");
+app.use("/api/posts", posts);
 
 // Handle production
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === "production") {
   // Static folder
-  app.user(express.static(__dirname + '/public'));
+  app.user(express.static(__dirname + "/public"));
 
   // Handle Single Page Application (SPA)
-  app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'));
+  app.get(/.*/, (req, res) => res.sendFile(__dirname + "/public/index.html"));
 }
 
 const port = process.env.PORT || 5001;
