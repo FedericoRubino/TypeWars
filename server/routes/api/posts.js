@@ -2,11 +2,13 @@ const express = require("express");
 const mongodb = require("mongodb");
 
 const router = express.Router();
+const dbUrl =
+  "mongodb+srv://cody:n3xtg3n@cluster0.azniz.mongodb.net/type_wars?retryWrites=true&w=majority";
 
 // Get Post
 router.get("/", async (req, res) => {
   const posts = await loadPostsCollection();
-  res.send(await posts.find("{}").toArray());
+  res.send(await posts.find({}).toArray());
 });
 
 // Add Post
@@ -27,10 +29,10 @@ router.delete("/:id", async (req, res) => {
 });
 
 async function loadPostsCollection() {
-  const client = await mongodb.MongoClient.connect(
-    "mongodb+srv://cody:n3xtg3n@cluster0.azniz.mongodb.net/type_wars?retryWrites=true&w=majority",
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  );
+  const client = await mongodb.MongoClient.connect(dbUrl, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 
   return client.db("type_wars").collection("posts");
 }
